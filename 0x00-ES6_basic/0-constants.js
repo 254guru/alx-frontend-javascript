@@ -1,28 +1,16 @@
 #!/usr/bin/node
-// Original function using var
-function taskFirst() {
-    var x = 10;
-    var y = 20;
-    console.log(x, y);
+export function taskFirst() {
+  const task = 'I prefer const when I can.'; // Instantiate variables using const
+  return task;
 }
 
-// Modified function using const
-function taskFirst() {
-    const x = 10;
-    const y = 20;
-    console.log(x, y);
+export function getLast() {
+  return ' is okay';
 }
 
-// Original function using var
-function taskNext() {
-    var a = 100;
-    var b = 200;
-    console.log(a, b);
-}
+export function taskNext() {
+  let combination = 'But sometimes let'; // Instantiate variables using let
+  combination += getLast();
 
-// Modified function using let
-function taskNext() {
-    let a = 100;
-    let b = 200;
-    console.log(a, b);
+  return combination;
 }
