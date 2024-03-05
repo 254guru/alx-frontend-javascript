@@ -1,7 +1,7 @@
 #!/usr/bin/node
 export default function taskBlock(trueOrFalse) {
   const task = false;
-  let task2 = true;
+  const task2 = true;
 
   if (trueOrFalse) {
     // No need to declare new variables here, just reassign the existing ones
