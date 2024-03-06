@@ -4,3 +4,4 @@ package-lock.json
 node_modules
 .eslintrc.js
 utils.js
+*-main.js
