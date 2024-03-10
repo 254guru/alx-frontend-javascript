@@ -1,6 +1,7 @@
-#!/usr/bin/node
-import ClassRoom from './0-classroom';
+import ClassRoom from "./0-classroom";
 
 export default function initializeRooms() {
-  return [19, 20, 34].map((size) => new ClassRoom(size));
+    const roomSizes = [19, 20, 34];
+    const rooms = roomSizes.map(size => new ClassRoom(size));
+    return rooms;
 }
